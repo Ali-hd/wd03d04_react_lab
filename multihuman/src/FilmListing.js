@@ -29,6 +29,7 @@ export default class FilmListing extends Component {
                     key={film.id}
                     onFaveToggle={() => this.props.onFaveToggle(film)}
                     isFave={this.props.faves.includes(film)}
+                    handleDetailsClick={() => this.props.handleDetailsClick(film)}
                 />
             )
         })
